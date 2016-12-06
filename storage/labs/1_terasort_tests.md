@@ -1,3 +1,4 @@
+```
 [hdfs@ip-172-31-10-136 ~]$ time hadoop jar /opt/cloudera/parcels/CDH-5.8.3-1.cdh5.8.3.p0.2/jars/hadoop-examples.jar terasort /tmp/teragen/ /tmp/sorted
 16/12/06 02:53:46 INFO terasort.TeraSort: starting
 16/12/06 02:53:48 INFO input.FileInputFormat: Total input paths to process : 2
@@ -82,3 +83,4 @@ real	0m38.149s
 user	0m9.810s
 sys	0m1.048s
 [hdfs@ip-172-31-10-136 ~]$
+```
