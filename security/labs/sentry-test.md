@@ -1,4 +1,5 @@
 ## As George after kinit
+<pre><code>
 [santosh015@ip-172-31-24-59 ~]$ kinit george
 Password for george@KSECURITY.COM:
 [santosh015@ip-172-31-24-59 ~]$ klist
@@ -37,6 +38,7 @@ INFO  : OK
 +------------+--+
 4 rows selected (0.49 seconds)
 0: jdbc:hive2://ip-172-31-24-58.ap-southeast-> !quit
+</code></pre>
 
 ## Now ferdinand
 <pre><code>
