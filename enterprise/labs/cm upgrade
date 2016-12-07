@@ -3,19 +3,17 @@
 
 ###Stop all the services on CM
 
-<pre><code>
 mysqldump -u root -p amon > scm.sql
 mysqldump -u root -p amon > amon.sql
 mysqldump -u root -p rman > rman.sql
 mysqldump -u root -p metastore > metastore.sql
 mysqldump -u root -p hue > hue.sql
 mysqldump -u root -p oozie > oozie.sql
-</code></pre>
 
 ## Stop cloudera management service via console
 
 ## Update max_connections for mysql
-<pre><code>
+
 vi /etc/my.cnf
 
 [mysqld]
@@ -40,7 +38,6 @@ gpgcheck = 1
 
 sudo yum clean all
 sudo yum upgrade -y cloudera-manager-server cloudera-manager-daemons cloudera-manager-agent
-</code></pre>
 
 ## Install with cloudera manager the other agents
 ### OR
@@ -53,21 +50,17 @@ baseurl=https://archive.cloudera.com/cm5/redhat/6/x86_64/cm/5/
 gpgkey = https://archive.cloudera.com/cm5/redhat/6/x86_64/cm/RPM-GPG-KEY-cloudera
 gpgcheck = 1
 
-</code></pre>
-
 ## Reboot
-<pre><code>
 sudo service cloudera-scm-server start
 sudo service cloudera-scm-agent start"
-</code></pre>
+
 
 # Results
 
 ## Get API version
-<pre><code>
+
 curl -u 'santosh015:*********' "http://54.254.215.223:7180/api/version"
 v14
-</code></pre>
 
 curl -u 'santosh015' "http://54.254.215.223:7180/api/version"v14
 
@@ -75,7 +68,7 @@ curl -u 'santosh015' "http:/54.254.215.223:7180/api/v14/cm/version"
 
 
 ## Get CM Version
-<pre><code>
+
 curl -u 'santosh015:*********' "http://54.254.215.223:7180/api/v14/cm/version"
 {
   "version" : "5.9.0",
@@ -84,10 +77,8 @@ curl -u 'santosh015:*********' "http://54.254.215.223:7180/api/v14/cm/version"
   "gitHash" : "898a5e032c080e18833dfc58180761f6ef2ea351",
   "snapshot" : false
 }
-</code></pre>
 
 ## Get users
-<pre><code>
 curl -u 'santosh015:*********' "http://54.254.215.223:7180/api/v14/users"
 {
   "items" : [ {
@@ -101,13 +92,11 @@ curl -u 'santosh015:*********' "http://54.254.215.223:7180/api/v14/users"
     "roles" : [ "ROLE_CONFIGURATOR" ]
   } ]
 }
-</code></pre>
 
 ## Get database server info
-<pre><code>
 curl -u 'santosh015:*********' "http://54.254.215.223/v14/cm/scmDbInfo"
 {
   "scmDbType" : "MYSQL",
   "embeddedDbUsed" : false
 }
-</code></pre>
+
