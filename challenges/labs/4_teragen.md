@@ -23,7 +23,7 @@ Found 9 items
 [raffles@ip-172-31-9-248 ~]
 </code></pre>
 
-### 5120000000 B in 312 blocks = blocks of 16MB
+### Block information
 <pre><code>
 [raffles@ip-172-31-9-248 ~]$ hdfs fsck  /user/raffles/tgen512m
 Connecting to namenode via http://ip-172-31-9-246.ap-southeast-1.compute.internal:50070
