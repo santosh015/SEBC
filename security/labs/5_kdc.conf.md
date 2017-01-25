@@ -1,3 +1,4 @@
+```
 [kdcdefaults]
  kdc_ports = 88
  kdc_tcp_ports = 88
@@ -11,3 +12,4 @@
   supported_enctypes = aes256-cts-hmac-sha1-96:normal arcfour-hmac-md5:normal
    max_renewable_life = 7d
  }
+```
