@@ -1,3 +1,4 @@
+```
 [libdefaults]
  default_realm = SANTOSH015.SG
  dns_lookup_realm = false
@@ -15,3 +16,4 @@
   kdc = ip-172-31-9-250.ap-southeast-1.compute.internal
   admin_server = ip-172-31-9-250.ap-southeast-1.compute.internal
  }
+```
