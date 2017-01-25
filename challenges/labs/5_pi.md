@@ -14,3 +14,5 @@ user	0m5.758s
 sys	0m0.299s
 
 </code></pre>
+
+mfe - Notice this ticket is non-renewable; the `Valid starting` and `renew until` fields show the same timestamp.
